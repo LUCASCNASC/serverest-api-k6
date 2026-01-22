@@ -37,5 +37,4 @@ export default async function () {
     await page.locator('.overlay-content .add-to-cart').nth(0).click();
 
     await page.close();
-}
-
+};

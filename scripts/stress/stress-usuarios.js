@@ -13,4 +13,4 @@ export const options = {
 export default function () {
     const res = http.get('http://localhost:3000/usuarios');
     check(res, { 'status é 200': (r) => r.status === 200 });
-}
+};

@@ -76,4 +76,4 @@ export function fluxoUsuarios() {
             'Detalhe Usuário - status 200': (r) => r.status === 200,
         });
     });
-}   
+}   ;
