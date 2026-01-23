@@ -21,13 +21,13 @@ export const options = {
 export function setup() {
     console.log('Iniciando o teste...');
     return { baseUrl: 'http://localhost:3000' };
-}
+};
 
 export default function (data) {
     http.get(`${data.baseUrl}/produtos`);
     sleep(1);
-}
+};
 
 export function teardown() {
     console.log('Encerrando o teste.');
-}
+};

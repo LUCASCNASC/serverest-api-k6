@@ -22,4 +22,4 @@ export default function (data) {
     check(res, {
         'acesso a produtos bem sucedido': (r) => r.status === 200,
     });
-}
+};

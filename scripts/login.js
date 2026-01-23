@@ -24,4 +24,4 @@ export default function (data) {
         'Authorization': data.authToken,
     };
     const res = http.get('http://localhost:3000/produtos', { headers: protectedHeaders });
-}
+};

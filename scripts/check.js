@@ -9,4 +9,4 @@ export default function () {
         'resposta contém produtos': (r) => r.body.includes('produto'),
         'quantidade produtos = 3': (r) => r.json('quantidade') === 3,
     });
-}
+};

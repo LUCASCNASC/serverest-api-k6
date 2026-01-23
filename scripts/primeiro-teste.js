@@ -9,7 +9,7 @@ export const options = {
 export function setup() {
     console.log('Iniciando Teste')
     return { baseUrl: 'http://localhost:3000' }
-}
+};
 
 export default function (data) {
     const res = http.get(`${data.baseUrl}/produtos`);
@@ -19,8 +19,8 @@ export default function (data) {
         'resposta contem produtos': (r) => r.body.includes('produtos'),
     });
 
-}
+};
 
 export function teardown() {
     console.log('Finalizando Teste')
-}
+};

@@ -14,4 +14,4 @@ export default function () {
     check(res, {
         'status 200 ou 404': (r) => [200, 404].includes(r.status),
     });
-}
+};

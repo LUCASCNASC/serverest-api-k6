@@ -19,4 +19,4 @@ export default function () {
     Espera (servidor pensando): ${res.timings.waiting} ms
     Recebimento (response): ${res.timings.receiving} ms
   `);
-}
+};

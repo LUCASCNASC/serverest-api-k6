@@ -26,4 +26,4 @@ export default function () {
     //  Registra nas métricas
     taxaSucesso.add(sucesso);
     if (!sucesso) totalErros.add(1);
-}
+};

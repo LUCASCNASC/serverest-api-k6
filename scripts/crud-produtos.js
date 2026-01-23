@@ -45,4 +45,4 @@ export default function (data) {
         'produto deletado': (r) => r.status === 200,
     });
 
-}
+};

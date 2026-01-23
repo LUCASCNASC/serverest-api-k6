@@ -32,4 +32,4 @@ export default function (data) {
         'produto cadastrado com sucesso': (r) => r.status === 201,
     });
 
-}
+};
