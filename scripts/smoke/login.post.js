@@ -2,8 +2,8 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export const options = {
-  vus: 1, // 1 usuário virtual
-  duration: '10s', // execução curta
+  vus: 1,
+  duration: '10s',
   thresholds: {
     http_req_duration: ['p(95)<500'], // 95% das requisições abaixo de 500ms
     http_req_failed: ['rate<0.01'],   // Erros de rede/sistema menores que 1%
