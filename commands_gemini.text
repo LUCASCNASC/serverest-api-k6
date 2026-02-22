@@ -1,3 +1,8 @@
 1. Smoke test:
 
 Crie um arquivo de smoke test para a API que está no print, abrangendo todos os cenários possíveis.
+
+
+2. Spike test:
+
+Crie um arquivo de spike test para a API que está no print, abrangendo todos os cenários possíveis.
