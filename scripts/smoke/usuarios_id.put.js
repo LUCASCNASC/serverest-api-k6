@@ -1,6 +1,8 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
+const BASE_URL = 'https://serverest.dev';
+
 export const options = {
   vus: 1, 
   duration: '5s',
@@ -8,8 +10,6 @@ export const options = {
     http_req_duration: ['p(95)<500'], 
   },
 };
-
-const BASE_URL = 'https://serverest.dev';
 
 export default function () {
   const headers = { 'Content-Type': 'application/json' };

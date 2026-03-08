@@ -1,6 +1,8 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
+const BASE_URL = 'https://serverest.dev';
+
 export const options = {
   vus: 1,
   duration: '10s',
@@ -10,7 +12,6 @@ export const options = {
   },
 };
 
-const BASE_URL = 'https://serverest.dev';
 
 export default function () {
   

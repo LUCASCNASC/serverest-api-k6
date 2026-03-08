@@ -1,6 +1,8 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
+const BASE_URL = 'https://serverest.dev';
+
 export const options = {
   vus: 1,
   duration: '10s',
@@ -9,8 +11,6 @@ export const options = {
     http_req_failed: ['rate<0.01'],   // Falhas de rede menores que 1%
   },
 };
-
-const BASE_URL = 'https://serverest.dev';
 
 export default function () {
   const headers = { 'Content-Type': 'application/json' };
