@@ -1,6 +1,8 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
+const BASE_URL = 'https://serverest.dev';
+
 export const options = {
   stages: [
     { duration: '10s', target: 20 },  // Ramp-up rápido para carga normal
@@ -16,8 +18,6 @@ export const options = {
     http_req_duration: ['p(95)<2000'], // 95% das requisições devem responder em menos de 2s
   },
 };
-
-const BASE_URL = 'https://serverest.dev';
 
 export default function () {
   const url = `${BASE_URL}/produtos`;

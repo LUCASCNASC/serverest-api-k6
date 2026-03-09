@@ -1,6 +1,8 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
+const BASE_URL = 'https://serverest.dev';
+
 // Configuração de Spike: Sobe rápido, mantém o pico e desce rápido
 export const options = {
   stages: [
@@ -14,8 +16,6 @@ export const options = {
     http_req_duration: ['p(95)<2000'], // 95% das reqs devem responder em até 2s no surto
   },
 };
-
-const BASE_URL = 'https://serverest.dev';
 
 export default function () {
   const headers = { 'Content-Type': 'application/json' };
