@@ -26,7 +26,8 @@ export function setup() {
 export default function (data) {
     http.get(`${data.baseUrl}/produtos`);
     sleep(1);
-};
+}
+;
 
 export function teardown() {
     console.log('Encerrando o teste.');
