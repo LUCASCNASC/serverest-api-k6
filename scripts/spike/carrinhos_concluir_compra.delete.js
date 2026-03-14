@@ -65,7 +65,7 @@ export default function () {
     produtos: [{ idProduto: productId, quantidade: 1 }]
   });
 
-  // Criar Carrinho (201)
+  // Create Cart (201)
   let resCart = http.post(`${BASE_URL}/carrinhos`, cartPayload, { headers: authHeaders });
   check(resCart, { 'Cart POST 201': (r) => r.status === 201 });
 
@@ -73,7 +73,8 @@ export default function () {
   // Concluir Compra para liberar estoque e carrinho
   http.del(`${BASE_URL}/carrinhos/concluir-compra`, null, { headers: authHeaders });
 
-  // Excluir Usuário
+  // Delete User
+
   if (userId) {
     http.del(`${BASE_URL}/usuarios/${userId}`);
   }
